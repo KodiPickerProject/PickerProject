@@ -72,8 +72,6 @@ def delete_current_config():
     current_config_file = open(current_config_file_path, "r+")
     current_config_data = json.load(current_config_file)
         
-
-
 #Updates the current config being used and writes it to current_config.json
 def update_current_config(config_name):
     global presets_data, presets_file, current_config_data, current_config_file
@@ -99,4 +97,21 @@ def get_preset_names():
     for item in presets_data:
         names.append(item["name"])
     return names
-    
+
+def does_current_config_exist():
+    try:
+        with open(current_config_file_path, 'r') as file:
+            data = json.load(file)
+            return bool(data)  # Returns True if the JSON file is empty, otherwise False
+    except (json.JSONDecodeError, FileNotFoundError):
+        # Handle JSON decoding errors or file not found
+        return True
+
+def get_current_config_name():
+    try:
+        with open(current_config_file_path, 'r') as file:
+            data = json.load(file)
+            return data.get('name', None)
+    except (json.JSONDecodeError, FileNotFoundError):
+        # Handle JSON decoding errors or file not found
+        return None

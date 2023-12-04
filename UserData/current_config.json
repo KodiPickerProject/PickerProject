@@ -1,1 +1,48 @@
-{}
+{
+    "name": "Default",
+    "watch-status": "any",
+    "media-type": "movie",
+    "genres": [
+        "Action",
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Crime",
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Mystery",
+        "Romance",
+        "Sci-Fi",
+        "Western",
+        "Thriller",
+        "Documentary",
+        "History",
+        "Sport"
+    ],
+    "media-length": [
+        "0",
+        "100000"
+    ],
+    "release-year": [
+        "0",
+        "100000"
+    ],
+    "ratings": [
+        "0",
+        "10"
+    ],
+    "parental-advisory": [
+        "Rated G",
+        "Rated PG",
+        "Rated PG-13",
+        "Rated R",
+        "Rated NC-17",
+        "Rated TV-Y",
+        "Rated TV-Y7",
+        "Rated TV-G",
+        "Rated TV-PG",
+        "Rated TV-14",
+        "Rated TV-MA"
+    ]
+}
