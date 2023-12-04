@@ -7,6 +7,7 @@ import src.lib_provider as library
 import datetime
 import requests
 import random
+import socket
 
 from src import json_utils, providers, mood_analysis
 
@@ -286,20 +287,29 @@ def display_streaming_service_page():
     dialog.ok(addonname, output_text)
     display_home_page()
 
-
+def is_api_running():
+    movie_titles = ["The Matrix"]
+    movie_paths = [1]
+    response = requests.get("http://127.0.0.1:5000/?", params={
+        'movie_list': movie_titles,
+        'kodi_ids': movie_paths})
+    if response is None:
+        return False
+    else:
+        return True
 
 def display_update_movies_page():
     update_button = dialog.yesno('Kodi', 'Would you like to update your movie information for your library? If so, make sure the '
                                          'MoodAnalysisAPI is running on https://local.host/5000/')
-    if update_button:
+    if update_button and is_api_running():
         p_dialog = xbmcgui.DialogProgress()
         p_dialog.create('Kodi', 'Gathering movie info...')
         mood_analysis.write_media_json()
         p_dialog.close()
         window.doModal()
     else:
+        dialog.ok('Error', 'API is not running')
         window.doModal()
-
 
 # Displays a page where the user can choose if they want to see media they've already seen
 def display_watch_status_page():
