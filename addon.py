@@ -288,15 +288,12 @@ def display_streaming_service_page():
     display_home_page()
 
 def is_api_running():
-    movie_titles = ["The Matrix"]
-    movie_paths = [1]
-    response = requests.get("http://127.0.0.1:5000/?", params={
-        'movie_list': movie_titles,
-        'kodi_ids': movie_paths})
-    if response is None:
-        return False
-    else:
+    url = "http://127.0.0.1:5000"
+    response = requests.get(url)
+    if response.status_code == 200:
         return True
+    else:
+        return False
 
 def display_update_movies_page():
     update_button = dialog.yesno('Kodi', 'Would you like to update your movie information for your library? If so, make sure the '
@@ -307,8 +304,10 @@ def display_update_movies_page():
         mood_analysis.write_media_json()
         p_dialog.close()
         window.doModal()
+    elif update_button and not is_api_running():
+        dialog.ok('Error', 'Make sure the API is running')
+        window.doModal()
     else:
-        dialog.ok('Error', 'API is not running')
         window.doModal()
 
 # Displays a page where the user can choose if they want to see media they've already seen
