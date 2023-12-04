@@ -29,7 +29,7 @@ def call_media_api():
 
 
 def write_media_json():
-    root_path = xbmcvfs.translatePath("special://home/addons/script.episode.picker/UserData/")
+    root_path = xbmcvfs.translatePath("special://home/addons/script.quick.picker/UserData/")
     media_json_file_path = root_path + 'media.json'
     response = call_media_api()
     json_string = response.content.decode('utf-8')
@@ -42,14 +42,14 @@ def write_media_json():
 
 # Returns False if media.json is empty, returns true otherwise
 def check_if_mood_analysis_can_be_performed():
-    root_path = xbmcvfs.translatePath("special://home/addons/script.episode.picker/UserData/")
+    root_path = xbmcvfs.translatePath("special://home/addons/script.quick.picker/UserData/")
     media_json_file_path = root_path + 'media.json'
     return os.stat(media_json_file_path).st_size != 0
 
 
 def play_random_media_with_mood(happy_sad, scary_relaxed, romantic_platonic, mindless_thought_provoking,
                                 slow_paced_action_packed):
-    root_path = xbmcvfs.translatePath("special://home/addons/script.episode.picker/UserData/")
+    root_path = xbmcvfs.translatePath("special://home/addons/script.quick.picker/UserData/")
     media_json_file_path = root_path + 'media.json'
     happy = sad = 0
     scary = relaxed = romantic = platonic = mindless = thought_provoking = slow_paced = action_packed = -1

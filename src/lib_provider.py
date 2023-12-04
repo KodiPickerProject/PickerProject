@@ -24,7 +24,7 @@ default_config = {
     ]
 }
 
-config_path = xbmcvfs.translatePath("special://home/addons/script.episode.picker/UserData/current_config.json")
+config_path = xbmcvfs.translatePath("special://home/addons/script.quick.picker/UserData/current_config.json")
 config_file = open(config_path, "r")
 config_data = json.load(config_file)
 
