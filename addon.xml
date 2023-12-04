@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.episode.picker" name="Quick Picker" version="1.0.2" provider-name="Team D">
+<addon id="script.quick.picker" name="Quick Picker" version="1.0.2" provider-name="Team D">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.pyxbmct" version="1.3.1"/>
@@ -10,7 +10,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">Popup Episode Picker</summary>
+		<summary lang="en">Popup Media Picker</summary>
 		<description lang="en">A program that allows you to randomly choose between your media</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
@@ -20,9 +20,6 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>screenshots/screenshot-01.jpg</screenshot>
-			<screenshot>screenshots/screenshot-02.jpg</screenshot>
-			<screenshot>screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>Updated the addon to use new addon.xml metadata</news>
 	</extension>

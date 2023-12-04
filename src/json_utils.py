@@ -1,7 +1,7 @@
 import json
 import xbmcvfs
 
-root_path = xbmcvfs.translatePath("special://home/addons/script.episode.picker/UserData/")
+root_path = xbmcvfs.translatePath("special://home/addons/script.quick.picker/UserData/")
 presets_file_path = root_path+'presets.json'
 current_config_file_path = root_path+'current_config.json'
 
