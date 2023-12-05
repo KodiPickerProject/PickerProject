@@ -4,7 +4,7 @@
 
 # Quick Picker
 
-Quick Picker is a addon for [Kodi](https://github.com/xbmc) that allows users to have their entertainment picked for them.
+Quick Picker is an addon for [Kodi](https://github.com/xbmc) that allows users to have their entertainment picked for them.
 
 
 
