@@ -19,14 +19,10 @@ Quick Picker is a addon for [Kodi](https://github.com/xbmc) that allows users to
 
 ## Installation
 
-To Install our addon first download the latest release
+Download the latest release
 
 
-**Add screenshots**
-
-
-Navigate through Kodi until you can install via zip.
-
+Navigate through Kodi and install Addon via zip. [Kodi Tutorial](https://kodi.wiki/view/Archive:Install_add-ons_from_zip_files)
 
 Installing mood analyis requires aditional installation that can be seen [here](https://github.com/KodiPickerProject/MoodAnalysisAPI).
 
