@@ -36,6 +36,7 @@ Installing mood analyis requires aditional installation that can be seen [here](
  - [The Movie Data Base (TMDB)](https://www.themoviedb.org/)
  - [IMDB](https://www.imdb.com/)
  - [spaCy](https://spacy.io/)
+ - [NLTK](https://www.nltk.org/)
 
 
 ## Authors
