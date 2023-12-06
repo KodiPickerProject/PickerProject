@@ -24,7 +24,7 @@ Download the latest release
 
 Navigate through Kodi and install Addon via zip. [Kodi Tutorial](https://kodi.wiki/view/Archive:Install_add-ons_from_zip_files)
 
-Installing mood analyis requires aditional installation that can be seen [here](https://github.com/KodiPickerProject/MoodAnalysisAPI).
+Installing mood analysis requires aditional installation that can be seen [here](https://github.com/KodiPickerProject/MoodAnalysisAPI).
 
     
 ## Acknowledgements
