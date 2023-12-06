@@ -7,12 +7,10 @@
 Quick Picker is a addon for [Kodi](https://github.com/xbmc) that allows users to have their entertainment picked for them.
 
 
-
-
 ## Features
 
 - Custom Presets
-- Mood Anaylsis
+- Mood Analysis
 - Search for Movies & TV shows across all streaming service platforms
 
 
@@ -24,7 +22,7 @@ Download the latest release
 
 Navigate through Kodi and install Addon via zip. [Kodi Tutorial](https://kodi.wiki/view/Archive:Install_add-ons_from_zip_files)
 
-Installing mood analysis requires aditional installation that can be seen [here](https://github.com/KodiPickerProject/MoodAnalysisAPI).
+Installing mood analysis requires additional installation that can be seen [here](https://github.com/KodiPickerProject/MoodAnalysisAPI).
 
     
 ## Acknowledgements
